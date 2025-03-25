@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/show.css" />
+    <title>Total Cost</title>
+  </head>
+  <body>
+    <main>
+      <%for(const travel of travels){%>
+      <div class="document-div">
+        <p><b>Distance:</b> <%= travel.distance %>km</p>
+        <p><b>Consumption:</b> <%= travel.fConsumption %>km/L</p>
+        <p><b>Price:</b> R$<%= travel.price %></p>
+        <p>
+          <b>Total Price:</b> R$<%= ((travel.distance/travel.fConsumption) *
+          travel.price).toFixed(2)%>
+        </p>
+      </div>
+      <%}%>
+    </main>
+  </body>
+</html>

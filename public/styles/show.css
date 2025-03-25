@@ -1,0 +1,16 @@
+body {
+  background-color: #6c584c;
+  color: #f0ead2;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.document-div {
+  padding: 4px;
+  background-color: #6d6875;
+  border-radius: 14px;
+  margin: 4px;
+}

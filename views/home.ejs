@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <title>Fuel expense calculator</title>
+  </head>
+  <body>
+    <h1>Welcome! This is my fuel expense calculator</h1>
+    <main>
+      <form class="fuel-form" action="/add" method="POST">
+        <div class="form-field distance-field">
+          <label for="distance"><b>Distance (km)</b></label>
+          <input id="distance" type="number" step="0.01" name="distance" />
+        </div>
+
+        <div class="form-field consumption-field">
+          <label for="fConsumption"> <b>Fuel consumption (km/L)</b></label>
+          <input
+            id="fConsumption"
+            type="number"
+            step="0.01"
+            name="fConsumption"
+          />
+        </div>
+
+        <div class="form-field price-field">
+          <label for="price"><b>Fuel price (R$)</b></label>
+          <input id="price" type="number" step="0.01" name="price" />
+        </div>
+
+        <div class="form-field button-field">
+          <button class="btn-submit" type="submit">Calculate</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
