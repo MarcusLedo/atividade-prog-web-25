@@ -1,0 +1,27 @@
+body {
+  background-color: #6c584c;
+  color: #f0ead2;
+}
+
+.fuel-form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.form-field {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-field {
+  display: flex;
+  margin-top: 24px;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+}
+
+.btn-submit {
+  max-width: 30%;
+}
